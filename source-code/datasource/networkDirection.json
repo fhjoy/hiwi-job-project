@@ -1,0 +1,85 @@
+[
+    {
+      "position" :1,
+      "type":"client",
+      "name" : "client1",
+      "routingTable": [
+        {
+          "source": "MAC-Client",
+          "destination": "MAC-Server",
+          "receiver": "MAC-Client",
+          "sender": "MAC-Client",
+          "next": "MAC-R1-1",
+          "link": 2
+        }
+      ],
+      "arpTable": [
+        {
+          "next": "MAC-R1-1",
+          "time": ".35"
+        }
+      ]
+    },
+    {
+      "position" :2,
+      "type":"router",
+      "name" : "router1",
+      "routingTable": [
+        {
+          "source": "MAC-Client",
+          "destination": "MAC-Server",
+          "receiver": "MAC-R1-1",
+          "sender": "MAC-R1-2",
+          "next": "MAC-R2-1",
+          "link": 2
+        }
+      ],
+      "arpTable": [
+        {
+          "next": "MAC-R2-1",
+          "time": "7.56"
+        }
+      ]
+    },
+    {
+      "position" :3,
+      "type":"router",
+      "name" : "router2",
+      "routingTable": [
+        {
+          "source": "MAC-Client",
+          "destination": "MAC-Server",
+          "receiver": "MAC-R2-1",
+          "sender": "MAC-R2-2",
+          "next": "MAC-Server",
+          "link": 2
+        }
+      ],
+      "arpTable": [
+        {
+          "next": "MAC-Server",
+          "time": "10.12"
+        }
+      ]
+    },
+    {
+      "position" :4,
+      "type":"server",
+      "name":"server1",
+      "routingTable": [
+        {
+          "source": "MAC-Client",
+          "destination": "MAC-Server",
+          "receiver": "MAC-Server",
+          "sender": "MAC-Server",
+          "link": 2
+        }
+      ],
+      "arpTable": [
+        {
+          "next": "N/A",
+          "time": "0"
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,32 @@
+[
+    {
+        "type" : "dynamic",
+        "physicalAddress" : "MAC-Client",
+        "internetAddress" : "129.13.3.108"
+    },
+    {
+        "type" : "static",
+        "physicalAddress" : "MAC-Server",
+        "internetAddress" : "145.5.9.27"
+    },
+    {
+        "type" : "static",
+        "physicalAddress" : "MAC-R1-1",
+        "internetAddress" : "129.13.3.60"
+    },
+    {
+        "type" : "static",
+        "physicalAddress" : "MAC-R1-2",
+        "internetAddress" : "133.2.2.3"
+    },
+    {
+        "type" : "static",
+        "physicalAddress" : "MAC-R2-1",
+        "internetAddress" : "133.2.2.7"
+    },
+    {
+        "type" : "static",
+        "physicalAddress" : "MAC-R2-2",
+        "internetAddress" : "145.5.9.19"
+    }
+]

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ARP Demostration</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/index.css"/>
+  </head>
+  <body>
+    <div class="container-fluid text-center" style="padding-top:-5px;">
+      <div class="content">
+        <div class="col-sm-12 sidenav">
+          <div class="well" style="height: 40px; padding-top:5px; padding-bottom:10px;">
+            <div class="row">
+                <div class="col col-md-8">
+                    <i class="fa fa-caret-right" style="font-size:25px;color:black;"></i>
+                    <!-- <i class="fa fa-car" style="font-size:60px;color:red;"></i> -->
+                    Select
+                    <select name="test" id="test">
+                      <option value="0">Client / Server</option>
+                    </select>
+                    <button id="startBtn" class="">Start</button>
+                    <span>&nbsp;</span>
+                    <button id="nextBtn"  class=""disabled>Next</button>
+                </div>
+                <div class="col col-md-4">
+                    
+                </div>
+            </div>
+          </div>
+          <div class="well" style="height: 135px;background-color:white;">
+            <div id="firstRouterTable" class="row">First Router Table</div>
+          </div>
+          <div class="well" style="padding-bottom:30px; background-color:white;">
+            <div class="row">
+                <div class="col col-md-12">
+                  <img width="100%" id="networkingImage" src="./images/network_with_four_components-offline.png" alt="">
+                </div>         
+                <div id="networkingDevices" class="row"></div>       
+            </div>
+            <div
+                id="dataDiv"
+                style="
+                  background: #c9cac4;
+                  left: 170px;
+                  height: 25px;
+                  width: 80px;
+                  position: absolute;
+                  padding-top: 2px;
+                "
+              >
+              <div><span style='background-color:gray;'>&nbsp;&nbsp;&nbsp;</span><span style='background-color:silver;'>IP</span><span style='background-color:red;'>MAC</span></div>
+          </div>
+          </div>
+          
+      <div class="well" style="height: 135px;background-color:white;">
+        <div id="secondRouterTable" class="row"></div>
+      </div>
+      <div class="well" style="height: 70px; padding-top: 10px; padding-bottom: 5px;">
+        <div class="row">
+            <div class="col col-md-6">Source:  <span id="sourceIp"></span></div>
+            <div class="col col-md-6">Sender MAC-Address : <span id="macAddressSender"></span></div>
+        </div>
+        <div class="row">
+            <div class="col col-md-6">Destination: <span id="destinationIp"></span></div>
+            <div class="col col-md-6">Receiver MAC-Address : <span id="macAddressReceiver"></span></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/animate.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
